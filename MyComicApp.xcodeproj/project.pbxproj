@@ -1,0 +1,981 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A335A00D21CCC8EA00E5B95B /* RealmObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A00B21CCC8E900E5B95B /* RealmObserver.swift */; };
+		A335A00E21CCC8EA00E5B95B /* RxRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A00C21CCC8EA00E5B95B /* RxRealm.swift */; };
+		A335A01221D07B2400E5B95B /* MyDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A01121D07B2400E5B95B /* MyDrawerController.swift */; };
+		A335A01421D07BD500E5B95B /* MyLikeVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A01321D07BD500E5B95B /* MyLikeVc.swift */; };
+		A335A01A21D1FD1D00E5B95B /* MyFoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A01821D1FD1D00E5B95B /* MyFoldingCell.swift */; };
+		A335A01B21D1FD1D00E5B95B /* MyFoldingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A335A01921D1FD1D00E5B95B /* MyFoldingCell.xib */; };
+		A335A02021D36E4600E5B95B /* RealmBindObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A01C21D36E4200E5B95B /* RealmBindObserver.swift */; };
+		A335A02121D36E4600E5B95B /* Reactive+RxRealmDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A01D21D36E4300E5B95B /* Reactive+RxRealmDataSources.swift */; };
+		A335A02221D36E4600E5B95B /* RxTableViewRealmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A01E21D36E4500E5B95B /* RxTableViewRealmDataSource.swift */; };
+		A335A02321D36E4600E5B95B /* RxCollectionViewRealmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A01F21D36E4500E5B95B /* RxCollectionViewRealmDataSource.swift */; };
+		A335A02521D5C2C400E5B95B /* RxImagePickerDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A02421D5C2C400E5B95B /* RxImagePickerDelegateProxy.swift */; };
+		A335A02721D60D4300E5B95B /* MyImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A02621D60D4300E5B95B /* MyImageVC.swift */; };
+		A335A02921D6117D00E5B95B /* MyImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A02821D6117D00E5B95B /* MyImageCell.swift */; };
+		A335A02B21D7173700E5B95B /* MyMainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A335A02A21D7173700E5B95B /* MyMainTabBarController.swift */; };
+		A336C16221BFC8D6006F2E2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A336C16121BFC8D6006F2E2C /* AppDelegate.swift */; };
+		A336C16421BFC8D6006F2E2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A336C16321BFC8D6006F2E2C /* ViewController.swift */; };
+		A336C16721BFC8D6006F2E2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A336C16521BFC8D6006F2E2C /* Main.storyboard */; };
+		A336C16921BFC8E2006F2E2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A336C16821BFC8E2006F2E2C /* Assets.xcassets */; };
+		A336C16C21BFC8E2006F2E2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A336C16A21BFC8E2006F2E2C /* LaunchScreen.storyboard */; };
+		A336C17721BFC8E3006F2E2C /* MyComicAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A336C17621BFC8E3006F2E2C /* MyComicAppTests.swift */; };
+		A336C18221BFC8E3006F2E2C /* MyComicAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A336C18121BFC8E3006F2E2C /* MyComicAppUITests.swift */; };
+		A35883AB21C0C92A00BD0343 /* MyGeneralObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35883A621C0C92A00BD0343 /* MyGeneralObject.swift */; };
+		A35883AC21C0C92A00BD0343 /* MyJSONMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35883A721C0C92A00BD0343 /* MyJSONMappable.swift */; };
+		A35883AD21C0C92A00BD0343 /* MyNet_RxMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35883A821C0C92A00BD0343 /* MyNet_RxMoya.swift */; };
+		A35883AE21C0C92A00BD0343 /* PrimitiveSequence+SwiftyJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35883A921C0C92A00BD0343 /* PrimitiveSequence+SwiftyJSONMapper.swift */; };
+		A35883AF21C0C92A00BD0343 /* Response+SwiftyJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35883AA21C0C92A00BD0343 /* Response+SwiftyJSONMapper.swift */; };
+		A35883B321C0DF4100BD0343 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35883B221C0DF4100BD0343 /* MyViewController.swift */; };
+		A35883BC21C1E87800BD0343 /* MyMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35883B621C1E87800BD0343 /* MyMainController.swift */; };
+		A35883BD21C1E87800BD0343 /* MyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35883B721C1E87800BD0343 /* MyNavigationController.swift */; };
+		A35883BE21C1E87800BD0343 /* MyMainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35883BA21C1E87800BD0343 /* MyMainTableView.swift */; };
+		A35883BF21C1E87800BD0343 /* MyMainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35883BB21C1E87800BD0343 /* MyMainTableViewCell.swift */; };
+		A3A2DD5A21C77E7100809939 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD5921C77E7100809939 /* Alamofire.framework */; };
+		A3A2DD5C21C77E7100809939 /* Ji.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD5B21C77E7100809939 /* Ji.framework */; };
+		A3A2DD5E21C77E7100809939 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD5D21C77E7100809939 /* Kingfisher.framework */; };
+		A3A2DD6021C77E7100809939 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD5F21C77E7100809939 /* Moya.framework */; };
+		A3A2DD6221C77E7100809939 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD6121C77E7100809939 /* Result.framework */; };
+		A3A2DD6421C77E7100809939 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD6321C77E7100809939 /* RxAtomic.framework */; };
+		A3A2DD6621C77E7100809939 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD6521C77E7100809939 /* RxCocoa.framework */; };
+		A3A2DD6821C77E7100809939 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD6721C77E7100809939 /* RxSwift.framework */; };
+		A3A2DD6A21C77E7100809939 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD6921C77E7100809939 /* SnapKit.framework */; };
+		A3A2DD6C21C77E7100809939 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD6B21C77E7100809939 /* SwiftyJSON.framework */; };
+		A3A2DD7321CB9C4800809939 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD7121CB9C1D00809939 /* Realm.framework */; };
+		A3A2DD7421CB9C4C00809939 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD7221CB9C1D00809939 /* RealmSwift.framework */; };
+		A3A2DD7721CB9C9900809939 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD7521CB9C9900809939 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3A2DD7821CB9C9900809939 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A3A2DD7621CB9C9900809939 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A3C2F18521C76BA50042ED09 /* comicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C2F18421C76BA50042ED09 /* comicModel.swift */; };
+		D87B7AE7F2795CAAAA0C92F6 /* Pods_MyComicApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B649C16AD03A650C8298E4FC /* Pods_MyComicApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A336C17321BFC8E3006F2E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A336C15621BFC8D6006F2E2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A336C15D21BFC8D6006F2E2C;
+			remoteInfo = MyComicApp;
+		};
+		A336C17E21BFC8E3006F2E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A336C15621BFC8D6006F2E2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A336C15D21BFC8D6006F2E2C;
+			remoteInfo = MyComicApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A3A2DD5221C77B3800809939 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A3A2DD7721CB9C9900809939 /* Realm.framework in Embed Frameworks */,
+				A3A2DD7821CB9C9900809939 /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3A2DD6E21C9E28700809939 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4FE7B729155991F3C0208D99 /* Pods-MyComicApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyComicApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyComicApp/Pods-MyComicApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5C261E80377B243BBBD23A1D /* Pods-MyComicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyComicApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyComicApp/Pods-MyComicApp.release.xcconfig"; sourceTree = "<group>"; };
+		A335A00B21CCC8E900E5B95B /* RealmObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmObserver.swift; sourceTree = "<group>"; };
+		A335A00C21CCC8EA00E5B95B /* RxRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxRealm.swift; sourceTree = "<group>"; };
+		A335A01121D07B2400E5B95B /* MyDrawerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDrawerController.swift; sourceTree = "<group>"; };
+		A335A01321D07BD500E5B95B /* MyLikeVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLikeVc.swift; sourceTree = "<group>"; };
+		A335A01821D1FD1D00E5B95B /* MyFoldingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFoldingCell.swift; sourceTree = "<group>"; };
+		A335A01921D1FD1D00E5B95B /* MyFoldingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyFoldingCell.xib; sourceTree = "<group>"; };
+		A335A01C21D36E4200E5B95B /* RealmBindObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmBindObserver.swift; sourceTree = "<group>"; };
+		A335A01D21D36E4300E5B95B /* Reactive+RxRealmDataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+RxRealmDataSources.swift"; sourceTree = "<group>"; };
+		A335A01E21D36E4500E5B95B /* RxTableViewRealmDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxTableViewRealmDataSource.swift; sourceTree = "<group>"; };
+		A335A01F21D36E4500E5B95B /* RxCollectionViewRealmDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCollectionViewRealmDataSource.swift; sourceTree = "<group>"; };
+		A335A02421D5C2C400E5B95B /* RxImagePickerDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxImagePickerDelegateProxy.swift; sourceTree = "<group>"; };
+		A335A02621D60D4300E5B95B /* MyImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageVC.swift; sourceTree = "<group>"; };
+		A335A02821D6117D00E5B95B /* MyImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageCell.swift; sourceTree = "<group>"; };
+		A335A02A21D7173700E5B95B /* MyMainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMainTabBarController.swift; sourceTree = "<group>"; };
+		A336C15E21BFC8D6006F2E2C /* MyComicApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyComicApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A336C16121BFC8D6006F2E2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A336C16321BFC8D6006F2E2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A336C16621BFC8D6006F2E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A336C16821BFC8E2006F2E2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A336C16B21BFC8E2006F2E2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A336C16D21BFC8E2006F2E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A336C17221BFC8E3006F2E2C /* MyComicAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyComicAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A336C17621BFC8E3006F2E2C /* MyComicAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyComicAppTests.swift; sourceTree = "<group>"; };
+		A336C17821BFC8E3006F2E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A336C17D21BFC8E3006F2E2C /* MyComicAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyComicAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A336C18121BFC8E3006F2E2C /* MyComicAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyComicAppUITests.swift; sourceTree = "<group>"; };
+		A336C18321BFC8E3006F2E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A35883A621C0C92A00BD0343 /* MyGeneralObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGeneralObject.swift; sourceTree = "<group>"; };
+		A35883A721C0C92A00BD0343 /* MyJSONMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyJSONMappable.swift; sourceTree = "<group>"; };
+		A35883A821C0C92A00BD0343 /* MyNet_RxMoya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNet_RxMoya.swift; sourceTree = "<group>"; };
+		A35883A921C0C92A00BD0343 /* PrimitiveSequence+SwiftyJSONMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PrimitiveSequence+SwiftyJSONMapper.swift"; sourceTree = "<group>"; };
+		A35883AA21C0C92A00BD0343 /* Response+SwiftyJSONMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response+SwiftyJSONMapper.swift"; sourceTree = "<group>"; };
+		A35883B221C0DF4100BD0343 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		A35883B621C1E87800BD0343 /* MyMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMainController.swift; sourceTree = "<group>"; };
+		A35883B721C1E87800BD0343 /* MyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyNavigationController.swift; sourceTree = "<group>"; };
+		A35883BA21C1E87800BD0343 /* MyMainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMainTableView.swift; sourceTree = "<group>"; };
+		A35883BB21C1E87800BD0343 /* MyMainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyMainTableViewCell.swift; sourceTree = "<group>"; };
+		A3A2DD5921C77E7100809939 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2DD5B21C77E7100809939 /* Ji.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Ji.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2DD5D21C77E7100809939 /* Kingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Kingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2DD5F21C77E7100809939 /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2DD6121C77E7100809939 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2DD6321C77E7100809939 /* RxAtomic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxAtomic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2DD6521C77E7100809939 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2DD6721C77E7100809939 /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2DD6921C77E7100809939 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2DD6B21C77E7100809939 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3A2DD7121CB9C1D00809939 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		A3A2DD7221CB9C1D00809939 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		A3A2DD7521CB9C9900809939 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		A3A2DD7621CB9C9900809939 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		A3C2F18421C76BA50042ED09 /* comicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comicModel.swift; sourceTree = "<group>"; };
+		B649C16AD03A650C8298E4FC /* Pods_MyComicApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyComicApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A336C15B21BFC8D6006F2E2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3A2DD7421CB9C4C00809939 /* RealmSwift.framework in Frameworks */,
+				A3A2DD7321CB9C4800809939 /* Realm.framework in Frameworks */,
+				A3A2DD5A21C77E7100809939 /* Alamofire.framework in Frameworks */,
+				A3A2DD5C21C77E7100809939 /* Ji.framework in Frameworks */,
+				A3A2DD5E21C77E7100809939 /* Kingfisher.framework in Frameworks */,
+				A3A2DD6021C77E7100809939 /* Moya.framework in Frameworks */,
+				A3A2DD6221C77E7100809939 /* Result.framework in Frameworks */,
+				A3A2DD6421C77E7100809939 /* RxAtomic.framework in Frameworks */,
+				A3A2DD6621C77E7100809939 /* RxCocoa.framework in Frameworks */,
+				A3A2DD6821C77E7100809939 /* RxSwift.framework in Frameworks */,
+				A3A2DD6A21C77E7100809939 /* SnapKit.framework in Frameworks */,
+				A3A2DD6C21C77E7100809939 /* SwiftyJSON.framework in Frameworks */,
+				D87B7AE7F2795CAAAA0C92F6 /* Pods_MyComicApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A336C16F21BFC8E3006F2E2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A336C17A21BFC8E3006F2E2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A335A01521D0D81300E5B95B /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				A335A01821D1FD1D00E5B95B /* MyFoldingCell.swift */,
+				A335A01921D1FD1D00E5B95B /* MyFoldingCell.xib */,
+				A335A02821D6117D00E5B95B /* MyImageCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		A336C15521BFC8D6006F2E2C = {
+			isa = PBXGroup;
+			children = (
+				A3A2DD7121CB9C1D00809939 /* Realm.framework */,
+				A3A2DD7221CB9C1D00809939 /* RealmSwift.framework */,
+				A3A2DD7521CB9C9900809939 /* Realm.framework */,
+				A3A2DD7621CB9C9900809939 /* RealmSwift.framework */,
+				A336C16021BFC8D6006F2E2C /* MyComicApp */,
+				A336C17521BFC8E3006F2E2C /* MyComicAppTests */,
+				A336C18021BFC8E3006F2E2C /* MyComicAppUITests */,
+				A336C15F21BFC8D6006F2E2C /* Products */,
+				C3CA48C065C85A2FF22E6AED /* Pods */,
+				D492C97DAA3F8EDB5F7B59AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A336C15F21BFC8D6006F2E2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A336C15E21BFC8D6006F2E2C /* MyComicApp.app */,
+				A336C17221BFC8E3006F2E2C /* MyComicAppTests.xctest */,
+				A336C17D21BFC8E3006F2E2C /* MyComicAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A336C16021BFC8D6006F2E2C /* MyComicApp */ = {
+			isa = PBXGroup;
+			children = (
+				A35883B421C1E87800BD0343 /* main */,
+				A35883B121C0DED200BD0343 /* pages */,
+				A35883A121C0C92A00BD0343 /* other */,
+				A336C16121BFC8D6006F2E2C /* AppDelegate.swift */,
+				A336C16321BFC8D6006F2E2C /* ViewController.swift */,
+				A336C16521BFC8D6006F2E2C /* Main.storyboard */,
+				A336C16821BFC8E2006F2E2C /* Assets.xcassets */,
+				A336C16A21BFC8E2006F2E2C /* LaunchScreen.storyboard */,
+				A336C16D21BFC8E2006F2E2C /* Info.plist */,
+			);
+			path = MyComicApp;
+			sourceTree = "<group>";
+		};
+		A336C17521BFC8E3006F2E2C /* MyComicAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A336C17621BFC8E3006F2E2C /* MyComicAppTests.swift */,
+				A336C17821BFC8E3006F2E2C /* Info.plist */,
+			);
+			path = MyComicAppTests;
+			sourceTree = "<group>";
+		};
+		A336C18021BFC8E3006F2E2C /* MyComicAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A336C18121BFC8E3006F2E2C /* MyComicAppUITests.swift */,
+				A336C18321BFC8E3006F2E2C /* Info.plist */,
+			);
+			path = MyComicAppUITests;
+			sourceTree = "<group>";
+		};
+		A35883A121C0C92A00BD0343 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				A35883A221C0C92A00BD0343 /* category */,
+				A35883A321C0C92A00BD0343 /* images */,
+				A35883A421C0C92A00BD0343 /* library */,
+				A35883A521C0C92A00BD0343 /* tools */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		A35883A221C0C92A00BD0343 /* category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		A35883A321C0C92A00BD0343 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		A35883A421C0C92A00BD0343 /* library */ = {
+			isa = PBXGroup;
+			children = (
+				A335A01D21D36E4300E5B95B /* Reactive+RxRealmDataSources.swift */,
+				A335A01C21D36E4200E5B95B /* RealmBindObserver.swift */,
+				A335A01F21D36E4500E5B95B /* RxCollectionViewRealmDataSource.swift */,
+				A335A01E21D36E4500E5B95B /* RxTableViewRealmDataSource.swift */,
+				A335A00B21CCC8E900E5B95B /* RealmObserver.swift */,
+				A335A00C21CCC8EA00E5B95B /* RxRealm.swift */,
+			);
+			path = library;
+			sourceTree = "<group>";
+		};
+		A35883A521C0C92A00BD0343 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				A35883A621C0C92A00BD0343 /* MyGeneralObject.swift */,
+				A35883A721C0C92A00BD0343 /* MyJSONMappable.swift */,
+				A35883A821C0C92A00BD0343 /* MyNet_RxMoya.swift */,
+				A35883A921C0C92A00BD0343 /* PrimitiveSequence+SwiftyJSONMapper.swift */,
+				A35883AA21C0C92A00BD0343 /* Response+SwiftyJSONMapper.swift */,
+				A335A02421D5C2C400E5B95B /* RxImagePickerDelegateProxy.swift */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
+		A35883B121C0DED200BD0343 /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				A335A01521D0D81300E5B95B /* cell */,
+				A35883B221C0DF4100BD0343 /* MyViewController.swift */,
+				A335A02621D60D4300E5B95B /* MyImageVC.swift */,
+				A335A01321D07BD500E5B95B /* MyLikeVc.swift */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
+		A35883B421C1E87800BD0343 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				A35883B521C1E87800BD0343 /* controller */,
+				A35883B821C1E87800BD0343 /* model */,
+				A35883B921C1E87800BD0343 /* view */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		A35883B521C1E87800BD0343 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A35883B621C1E87800BD0343 /* MyMainController.swift */,
+				A35883B721C1E87800BD0343 /* MyNavigationController.swift */,
+				A335A01121D07B2400E5B95B /* MyDrawerController.swift */,
+				A335A02A21D7173700E5B95B /* MyMainTabBarController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		A35883B821C1E87800BD0343 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A3C2F18421C76BA50042ED09 /* comicModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		A35883B921C1E87800BD0343 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A35883BA21C1E87800BD0343 /* MyMainTableView.swift */,
+				A35883BB21C1E87800BD0343 /* MyMainTableViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C3CA48C065C85A2FF22E6AED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FE7B729155991F3C0208D99 /* Pods-MyComicApp.debug.xcconfig */,
+				5C261E80377B243BBBD23A1D /* Pods-MyComicApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D492C97DAA3F8EDB5F7B59AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3A2DD5921C77E7100809939 /* Alamofire.framework */,
+				A3A2DD5B21C77E7100809939 /* Ji.framework */,
+				A3A2DD5D21C77E7100809939 /* Kingfisher.framework */,
+				A3A2DD5F21C77E7100809939 /* Moya.framework */,
+				A3A2DD6121C77E7100809939 /* Result.framework */,
+				A3A2DD6321C77E7100809939 /* RxAtomic.framework */,
+				A3A2DD6521C77E7100809939 /* RxCocoa.framework */,
+				A3A2DD6721C77E7100809939 /* RxSwift.framework */,
+				A3A2DD6921C77E7100809939 /* SnapKit.framework */,
+				A3A2DD6B21C77E7100809939 /* SwiftyJSON.framework */,
+				B649C16AD03A650C8298E4FC /* Pods_MyComicApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A336C15D21BFC8D6006F2E2C /* MyComicApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A336C18621BFC8E3006F2E2C /* Build configuration list for PBXNativeTarget "MyComicApp" */;
+			buildPhases = (
+				056E1DD6589791E7EE40E89E /* [CP] Check Pods Manifest.lock */,
+				A336C15A21BFC8D6006F2E2C /* Sources */,
+				A336C15B21BFC8D6006F2E2C /* Frameworks */,
+				A336C15C21BFC8D6006F2E2C /* Resources */,
+				4925E3B031FC41D18D9279BA /* [CP] Embed Pods Frameworks */,
+				A3A2DD5221C77B3800809939 /* Embed Frameworks */,
+				A3A2DD6E21C9E28700809939 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyComicApp;
+			productName = MyComicApp;
+			productReference = A336C15E21BFC8D6006F2E2C /* MyComicApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A336C17121BFC8E3006F2E2C /* MyComicAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A336C18921BFC8E3006F2E2C /* Build configuration list for PBXNativeTarget "MyComicAppTests" */;
+			buildPhases = (
+				A336C16E21BFC8E3006F2E2C /* Sources */,
+				A336C16F21BFC8E3006F2E2C /* Frameworks */,
+				A336C17021BFC8E3006F2E2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A336C17421BFC8E3006F2E2C /* PBXTargetDependency */,
+			);
+			name = MyComicAppTests;
+			productName = MyComicAppTests;
+			productReference = A336C17221BFC8E3006F2E2C /* MyComicAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A336C17C21BFC8E3006F2E2C /* MyComicAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A336C18C21BFC8E3006F2E2C /* Build configuration list for PBXNativeTarget "MyComicAppUITests" */;
+			buildPhases = (
+				A336C17921BFC8E3006F2E2C /* Sources */,
+				A336C17A21BFC8E3006F2E2C /* Frameworks */,
+				A336C17B21BFC8E3006F2E2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A336C17F21BFC8E3006F2E2C /* PBXTargetDependency */,
+			);
+			name = MyComicAppUITests;
+			productName = MyComicAppUITests;
+			productReference = A336C17D21BFC8E3006F2E2C /* MyComicAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A336C15621BFC8D6006F2E2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = My;
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = oMaoyu;
+				TargetAttributes = {
+					A336C15D21BFC8D6006F2E2C = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					A336C17121BFC8E3006F2E2C = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = A336C15D21BFC8D6006F2E2C;
+					};
+					A336C17C21BFC8E3006F2E2C = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = A336C15D21BFC8D6006F2E2C;
+					};
+				};
+			};
+			buildConfigurationList = A336C15921BFC8D6006F2E2C /* Build configuration list for PBXProject "MyComicApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A336C15521BFC8D6006F2E2C;
+			productRefGroup = A336C15F21BFC8D6006F2E2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A336C15D21BFC8D6006F2E2C /* MyComicApp */,
+				A336C17121BFC8E3006F2E2C /* MyComicAppTests */,
+				A336C17C21BFC8E3006F2E2C /* MyComicAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A336C15C21BFC8D6006F2E2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A336C16C21BFC8E2006F2E2C /* LaunchScreen.storyboard in Resources */,
+				A336C16921BFC8E2006F2E2C /* Assets.xcassets in Resources */,
+				A336C16721BFC8D6006F2E2C /* Main.storyboard in Resources */,
+				A335A01B21D1FD1D00E5B95B /* MyFoldingCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A336C17021BFC8E3006F2E2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A336C17B21BFC8E3006F2E2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		056E1DD6589791E7EE40E89E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyComicApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4925E3B031FC41D18D9279BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyComicApp/Pods-MyComicApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
+				"${BUILT_PRODUCTS_DIR}/JXPhotoBrowser/JXPhotoBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/Ji/Ji.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TangramKit/TangramKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ZHRefresh/ZHRefresh.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JXPhotoBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ji.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TangramKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZHRefresh.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyComicApp/Pods-MyComicApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A336C15A21BFC8D6006F2E2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35883BE21C1E87800BD0343 /* MyMainTableView.swift in Sources */,
+				A336C16421BFC8D6006F2E2C /* ViewController.swift in Sources */,
+				A335A01A21D1FD1D00E5B95B /* MyFoldingCell.swift in Sources */,
+				A35883AE21C0C92A00BD0343 /* PrimitiveSequence+SwiftyJSONMapper.swift in Sources */,
+				A35883BC21C1E87800BD0343 /* MyMainController.swift in Sources */,
+				A335A00E21CCC8EA00E5B95B /* RxRealm.swift in Sources */,
+				A35883BD21C1E87800BD0343 /* MyNavigationController.swift in Sources */,
+				A35883AC21C0C92A00BD0343 /* MyJSONMappable.swift in Sources */,
+				A35883BF21C1E87800BD0343 /* MyMainTableViewCell.swift in Sources */,
+				A336C16221BFC8D6006F2E2C /* AppDelegate.swift in Sources */,
+				A335A02221D36E4600E5B95B /* RxTableViewRealmDataSource.swift in Sources */,
+				A335A02921D6117D00E5B95B /* MyImageCell.swift in Sources */,
+				A3C2F18521C76BA50042ED09 /* comicModel.swift in Sources */,
+				A335A02721D60D4300E5B95B /* MyImageVC.swift in Sources */,
+				A335A00D21CCC8EA00E5B95B /* RealmObserver.swift in Sources */,
+				A35883AB21C0C92A00BD0343 /* MyGeneralObject.swift in Sources */,
+				A335A02521D5C2C400E5B95B /* RxImagePickerDelegateProxy.swift in Sources */,
+				A35883AD21C0C92A00BD0343 /* MyNet_RxMoya.swift in Sources */,
+				A335A02B21D7173700E5B95B /* MyMainTabBarController.swift in Sources */,
+				A35883B321C0DF4100BD0343 /* MyViewController.swift in Sources */,
+				A335A02021D36E4600E5B95B /* RealmBindObserver.swift in Sources */,
+				A335A01221D07B2400E5B95B /* MyDrawerController.swift in Sources */,
+				A335A02121D36E4600E5B95B /* Reactive+RxRealmDataSources.swift in Sources */,
+				A35883AF21C0C92A00BD0343 /* Response+SwiftyJSONMapper.swift in Sources */,
+				A335A02321D36E4600E5B95B /* RxCollectionViewRealmDataSource.swift in Sources */,
+				A335A01421D07BD500E5B95B /* MyLikeVc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A336C16E21BFC8E3006F2E2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A336C17721BFC8E3006F2E2C /* MyComicAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A336C17921BFC8E3006F2E2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A336C18221BFC8E3006F2E2C /* MyComicAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A336C17421BFC8E3006F2E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A336C15D21BFC8D6006F2E2C /* MyComicApp */;
+			targetProxy = A336C17321BFC8E3006F2E2C /* PBXContainerItemProxy */;
+		};
+		A336C17F21BFC8E3006F2E2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A336C15D21BFC8D6006F2E2C /* MyComicApp */;
+			targetProxy = A336C17E21BFC8E3006F2E2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A336C16521BFC8D6006F2E2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A336C16621BFC8D6006F2E2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A336C16A21BFC8E2006F2E2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A336C16B21BFC8E2006F2E2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A336C18421BFC8E3006F2E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A336C18521BFC8E3006F2E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A336C18721BFC8E3006F2E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE7B729155991F3C0208D99 /* Pods-MyComicApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G974F8528;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/\"",
+				);
+				INFOPLIST_FILE = MyComicApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oMaoyu.ComicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A336C18821BFC8E3006F2E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C261E80377B243BBBD23A1D /* Pods-MyComicApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6G974F8528;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(SRCROOT)/\"",
+				);
+				INFOPLIST_FILE = MyComicApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.oMaoyu.ComicApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A336C18A21BFC8E3006F2E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LQNM5BSF2;
+				INFOPLIST_FILE = MyComicAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.oMaoyu.MyComicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyComicApp.app/MyComicApp";
+			};
+			name = Debug;
+		};
+		A336C18B21BFC8E3006F2E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LQNM5BSF2;
+				INFOPLIST_FILE = MyComicAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.oMaoyu.MyComicAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyComicApp.app/MyComicApp";
+			};
+			name = Release;
+		};
+		A336C18D21BFC8E3006F2E2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LQNM5BSF2;
+				INFOPLIST_FILE = MyComicAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.oMaoyu.MyComicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyComicApp;
+			};
+			name = Debug;
+		};
+		A336C18E21BFC8E3006F2E2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LQNM5BSF2;
+				INFOPLIST_FILE = MyComicAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.oMaoyu.MyComicAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyComicApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A336C15921BFC8D6006F2E2C /* Build configuration list for PBXProject "MyComicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A336C18421BFC8E3006F2E2C /* Debug */,
+				A336C18521BFC8E3006F2E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A336C18621BFC8E3006F2E2C /* Build configuration list for PBXNativeTarget "MyComicApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A336C18721BFC8E3006F2E2C /* Debug */,
+				A336C18821BFC8E3006F2E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A336C18921BFC8E3006F2E2C /* Build configuration list for PBXNativeTarget "MyComicAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A336C18A21BFC8E3006F2E2C /* Debug */,
+				A336C18B21BFC8E3006F2E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A336C18C21BFC8E3006F2E2C /* Build configuration list for PBXNativeTarget "MyComicAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A336C18D21BFC8E3006F2E2C /* Debug */,
+				A336C18E21BFC8E3006F2E2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A336C15621BFC8D6006F2E2C /* Project object */;
+}
